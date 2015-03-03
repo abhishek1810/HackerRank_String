@@ -1,4 +1,4 @@
-package samples;
+package sorting;
 import java.io.*;
 import java.util.*;
 import java.text.*;

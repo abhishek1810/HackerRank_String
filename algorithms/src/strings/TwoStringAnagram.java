@@ -1,4 +1,4 @@
-package samples;
+package strings;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
