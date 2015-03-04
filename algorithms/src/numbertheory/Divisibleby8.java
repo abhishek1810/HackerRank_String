@@ -49,9 +49,10 @@ class Divisibleby8 {
 
 	private static List prepare8Hash() {
 		List list = new ArrayList();
-		for (int i = 100; i < 1000; i++) {
+		for (int i = 100; i <= 1000; i++) {
 			if (i % 8 == 0) {
-				list.add(i);
+				list.add("" + i);
+				if(i >= 1000) { list.add("000"); }
 			}
 		}
 		return list;
