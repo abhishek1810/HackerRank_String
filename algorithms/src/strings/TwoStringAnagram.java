@@ -1,10 +1,14 @@
 package strings;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
+/**
+ * 
+ * @author Naveen Jakkani
+ * @link https://www.hackerrank.com/challenges/anagram
+ *
+ */
 public class TwoStringAnagram {
 
 	public static void main(String[] args) {
