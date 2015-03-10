@@ -25,20 +25,23 @@ public class InsertionSort2 {
 		int len = data.length;
 		int key = 0;
 		int i = 0;
-
+		int counter = 0;
 		for (int j = 1; j < len; j++) {
 			key = data[j];
 			i = j-1;
 			while(i>=0 && data[i] > key){
-				data[i +1] = data[i];
+				data[i + 1] = data[i];
 				i = i-1;
 				data[i + 1] = key;
+				//System.out.println(key + " >> " + i);
+				counter ++ ;
 			}
 			for (int j2 = 0; j2 < data.length; j2++) {
-				System.out.print(data[j2]+ (j2 != data.length ? " " : ""));
+			//	System.out.print(data[j2]+ (j2 != data.length ? " " : ""));
 			}
-			System.out.println("");
 		}
+		//System.out.println("");
+		System.out.println(counter);
 
 		return data;
 	}
