@@ -1,6 +1,13 @@
 package search;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Naveen Jakkani
+ * @link https://www.hackerrank.com/challenges/encryption
+ *
+ */
+
 public class Encryption {
 
 	public static void main(String[] args) {
