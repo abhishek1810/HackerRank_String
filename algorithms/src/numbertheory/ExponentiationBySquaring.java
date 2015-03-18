@@ -3,6 +3,11 @@
  */
 package numbertheory;
 
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * @author Naveen Jakkani
  * 
@@ -10,6 +15,8 @@ package numbertheory;
  *
  */
 public class ExponentiationBySquaring {
+
+	private static final BigInteger TWO = new BigInteger("2");
 
 	/**
 	 * 
@@ -23,20 +30,23 @@ public class ExponentiationBySquaring {
 	 */
 	public static void main(String[] args) {
 		
-		int n = 2;
-		int res = 1;
-		int power = 9;
-		while(power > 0){
-			if(power % 2 == 1) {
-				res = res * n;
-				power -= 1;
+		BigInteger n = new BigInteger("10");
+		BigInteger res = BigInteger.ONE;
+		BigInteger power = new BigInteger("5");
+		power = power.subtract(BigInteger.ONE);
+		BigInteger div = new BigInteger("18");
+		BigInteger temp = BigInteger.TEN;
+		while(power.compareTo(BigInteger.ZERO) > 0){
+			if(power.mod(TWO).equals(BigInteger.ONE)) {
+				res = res.multiply(n).mod(div);
+				//power = power.subtract(BigInteger.ONE);
 			}
-			n = n*n;
-			System.out.println(n);
-			power /= 2;
+			n = n.multiply(n);
+			n = n.mod(div);
+			power = power.divide(TWO);
 		}
-		System.out.println(res + " <> " + Math.pow(2, 9));
-		
+		System.out.println("res : " + res);
+		res = res.multiply(BigInteger.TEN).divide(new BigInteger("9"));
+		System.out.println(res);
 	}
-
 }
