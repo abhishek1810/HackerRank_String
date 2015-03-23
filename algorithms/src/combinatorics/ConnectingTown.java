@@ -6,6 +6,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Naveen Jakkani
+ *
+ */
 public class ConnectingTown {
 
 	public static void main(String[] args) {
@@ -37,6 +42,7 @@ public class ConnectingTown {
 			d = d.mod(new BigInteger("1234567"));
 			System.out.println(d);
 		}
+		s.close();
 
 	}
 
