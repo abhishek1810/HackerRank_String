@@ -29,7 +29,6 @@ public class LoveLetterMystery {
 			  if(r.equalsIgnoreCase(arr[i])) {  System.out.println(counter);  }
 			  else {
 				  char[] c = arr[i].toCharArray();
-				  char[] rc = r.toCharArray();
 				  int k = c.length - 1;
 				  int j = 0;
 				  while(j < k){
