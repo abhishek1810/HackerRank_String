@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 /**
  * @author JakkaniN
+ * @link https://www.hackerrank.com/challenges/fibonacci-modified
  *
  */
 public class DP_Fibonacci {
